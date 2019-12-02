@@ -66,9 +66,9 @@ float suma = 0;
       matrizb[i][j] = 0;
     }
   }
-  for (int e = 0; e < 120; e++) {//calculo de distancia euclideana
-    for (int d = 0; d < 4 ; d++) {
-      suma = suma + pow(matriz[e][d] - datos_prueba[d], 2);
+  for (i = 0; i < 120; i++) {//calculo de distancia euclideana
+    for (j= 0; j < 4 ; j++) {
+      suma = suma + pow(matriz[i][j] - datos_prueba[j], 2);
     }
     distancia = sqrt(suma);//Se eslige distancia Mayor
     if (distancia > distanciam) {
